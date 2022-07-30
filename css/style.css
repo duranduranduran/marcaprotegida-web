@@ -416,7 +416,9 @@ ul{
 }
 @media (max-width: 500px) {
     .logo-main{
-        display: none;
+        transform: scale(1.6);
+        bottom: 3rem;
+
     }
     
 }

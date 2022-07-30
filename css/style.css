@@ -3,7 +3,7 @@
 :root{
     --transition: all 1s ease-in-out;
     --dark-color: #332e29;
-    --light-color: #fff;
+    --light-color: rgba(251,250,239,255);    ;
     --darkblue-color:rgba(30,52,79,255);
 }
 
@@ -68,7 +68,8 @@ ul{
     justify-content: center;
 }
 #hover-socials:hover{
-    background-color: rgb(120, 49, 60);;
+    background-color: var(--light-color);
+    transform: scale(1.2);
 }
 .py-7{
     padding: 7rem 0;
@@ -96,9 +97,15 @@ ul{
     width: 100%;
 }
 
+.logo-main {
+    position: relative;
+    bottom: 20rem;
+    padding: 3rem;
+}
+
 
 .header-content{
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 .header-content h1{
     font-size: 3.5rem;
@@ -107,7 +114,7 @@ ul{
     color: var(--light-color);
 }
 .typewrite{
-    color:rgb(120, 49, 60);
+    color:rgba(251,250,239,255);
 }
 .header-content h3{
     color: var(--light-color);
@@ -133,12 +140,26 @@ ul{
     opacity: 0.9;
 }
 
+#about {
+    background-color: var(--darkblue-color);
+    color: var(--light-color);
+}
+
+#about h2, #about h3{
+    color: var(--light-color);
+}
+
+
 /* about */
 .about-left{
-    margin-bottom: 4rem;
+    padding: 2rem;
     height: 480px;
     overflow: hidden;
+
 }
+
+
+
 /* button down and title -reusable */
 .btn-down{
     font-size: 3rem;
@@ -169,7 +190,7 @@ ul{
     left: 0;
     width: 70px;
     height: 4px;
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
 }
 
 /* work */
@@ -247,7 +268,7 @@ ul{
     background-color: #000;
 }
 
-#insta{
+/* #insta{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/silo.jpg') center/cover no-repeat fixed;
     min-height: 65vh;
 }
@@ -268,7 +289,7 @@ ul{
 }
 .insta-grid > div:hover{
     transform: scale(0.9);
-}
+} */
 
 /* footer */
 #footer{
@@ -394,7 +415,7 @@ ul{
     }
 }
 @media (max-width: 500px) {
-    #insta{
+    .logo-main{
         display: none;
     }
     

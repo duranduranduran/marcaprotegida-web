@@ -155,8 +155,14 @@ ul{
     padding: 2rem;
     height: 480px;
     overflow: hidden;
-
+    background-size: contain;
 }
+
+.lead {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 
 
 
